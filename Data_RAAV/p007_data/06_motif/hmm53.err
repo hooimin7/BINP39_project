@@ -1,0 +1,110 @@
+
+Inactive Modules:
+  1) Python/3.11.5     2) SQLite/3.43.1     3) XZ/5.4.4
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) Tcl/8.6.13        3) bzip2/1.0.8      5) libreadline/8.2     7) zlib/1.2.13
+  2) binutils/2.40     4) libffi/3.4.4     6) ncurses/6.4
+
+The following have been reloaded with a version change:
+  1) GCCcore/13.2.0 => GCCcore/12.3.0
+
+
+Activating Modules:
+  1) SQLite/3.42.0     2) XZ/5.4.2
+
+
+Hammock version 1.2.0 Run with --help for a brief description of command line parameters.
+
+Loading input sequences...
+117148 unique sequences loaded.
+74162213 total sequences loaded.
+117148 unique sequences after non-specified labels filtered out
+74162213 total sequences after non-specified labels fileterd out
+Shortest sequence: 7 AA. Longest sequence: 7 AA.
+More than 10 000 unique sequences. Using greedy clustering. Use --use_clinkage to force clinkage clustering
+Setting max shift to 6 as the length of the shortest sequence is only 7
+Generating input statistics...
+Greedy clustering threshold not set. Setting automatically to: 12
+Initial greedy clusters limit not set. Setting automatically to: 2929
+Greedy clustering...
+Ready. Clustering time: 384642
+Resulting clusers: 57108
+Building MSAs...
+Ready. Total time: 386426
+Saving results to output files...
+Greedy clustering results in: 06_motif/38_S13/Hammock/initial_clusters.tsv
+and: 06_motif/38_S13/Hammock/initial_clusters_sequences.tsv
+and: 06_motif/38_S13/Hammock/initial_clusters_sequences_original_order.tsv
+
+Loading clusters...
+Maximal alignment length not set. Setting automatically to: 14
+Minimal number of match states not set. Setting automatically to: 2
+Assign threshold not set. Setting automatically to: 
+6.65,5.25,3.85
+Overlap threshold not set. Setting automatically to: 
+4.9,2.8,0.0
+Merge threshold not set. Setting automatically on the basis of average sequence length to: 
+7.0,6.3,5.6
+Initial extension threshold not set. Setting automatically on the basis of merge threshold sequence to: 7.700000000000001
+2 clusters rejected because of match states and information content constraints.
+Initial cluster extension...
+
+Clustering in 3 rounds...
+
+Round 1:
+
+65 clusters remaining
+Building hmms and searching database...
+Extending clusters...
+6490 sequences to be inserted into clusters
+64 clusters to be extended
+while extending cluster 1503 [/home/hooimin/Hammock_v_1.2.0/Hammock_v_1.2.0/clustal-omega-1.2.0/clustalO-64bit stderr]: WARNING: Joining sequences of different type
+while extending cluster 1813 [/home/hooimin/Hammock_v_1.2.0/Hammock_v_1.2.0/clustal-omega-1.2.0/clustalO-64bit stderr]: WARNING: Joining sequences of different type
+while extending cluster 1475 [/home/hooimin/Hammock_v_1.2.0/Hammock_v_1.2.0/clustal-omega-1.2.0/clustalO-64bit stderr]: WARNING: Joining sequences of different type
+304 sequences rejected
+1463 cluster pairs to check and merge.
+Merging clusters from 1 groups...
+Buiding hhs...
+HH clustering...
+
+Round 2:
+
+40 clusters remaining
+Building hmms and searching database...
+Extending clusters...
+5659 sequences to be inserted into clusters
+36 clusters to be extended
+while extending cluster 2730 [/home/hooimin/Hammock_v_1.2.0/Hammock_v_1.2.0/clustal-omega-1.2.0/clustalO-64bit stderr]: WARNING: Joining sequences of different type
+378 sequences rejected
+416 cluster pairs to check and merge.
+Merging clusters from 1 groups...
+Buiding hhs...
+HH clustering...
+Error. Run with --help for a brief description of command line parameters. Trace: 
+
+java.util.concurrent.ExecutionException: java.lang.StringIndexOutOfBoundsException: String index out of range: 15
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at cz.krejciadam.hammock.IterativeHmmClusterer.parallelHHClustering(IterativeHmmClusterer.java:504)
+	at cz.krejciadam.hammock.IterativeHmmClusterer.iterativeHmmClustering(IterativeHmmClusterer.java:225)
+	at cz.krejciadam.hammock.Hammock.runClustering(Hammock.java:649)
+	at cz.krejciadam.hammock.Hammock.runFull(Hammock.java:379)
+	at cz.krejciadam.hammock.Hammock.parseArgs(Hammock.java:271)
+	at cz.krejciadam.hammock.Hammock.main(Hammock.java:145)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: 15
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)
+	at java.base/java.lang.String.charAt(String.java:693)
+	at cz.krejciadam.hammock.HHsuiteRunner.getNewGapPositions(HHsuiteRunner.java:246)
+	at cz.krejciadam.hammock.HHsuiteRunner.mergeClusters(HHsuiteRunner.java:203)
+	at cz.krejciadam.hammock.HHsuiteRunner.mergeClusters(HHsuiteRunner.java:185)
+	at cz.krejciadam.hammock.IterativeHmmClusterer.hhClustering(IterativeHmmClusterer.java:557)
+	at cz.krejciadam.hammock.hhClusteringRunner.call(IterativeHmmClusterer.java:612)
+	at cz.krejciadam.hammock.hhClusteringRunner.call(IterativeHmmClusterer.java:597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
