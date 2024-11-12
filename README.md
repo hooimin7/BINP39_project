@@ -292,9 +292,9 @@ sbash ~/RAAV-60/scripts/sort_uniqueLib.sh
 According to the sorting of unique: p006 library extracted showed 'TAC' is the highest, 
 will use the sequence 'TCTTATCTCGTGGTAC' from RAAV-template sequence
 
-Fragment extraction: with p006 barcode template sequence is correct
-434710288 Aug 13 10:32 p006_S3_L001_R1_001_barExt_6.fastq.gz # (this is correct)
-99287618 Aug 13 10:41 p006_S3_L001_R1_001_barExt_7.fastq.gz # (this is incorrect)
+Fragment extraction: with p006 barcode template sequence is correct <br>
+434710288 Aug 13 10:32 p006_S3_L001_R1_001_barExt_6.fastq.gz # (this is correct) <br>
+99287618 Aug 13 10:41 p006_S3_L001_R1_001_barExt_7.fastq.gz # (this is incorrect) <br>
 
 Since p006_S3_L001_R1_001_barExt_6.fastq.gz is correct, Proceed pairfq with p006_6 output
 
