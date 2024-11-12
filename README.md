@@ -203,7 +203,7 @@ Lookup table generation (For a general control of correct pairing of barcode to 
 sbatch ~/RAAV-60/scripts/LUT_p005.sh
 ```
 
-# 4. Align against the NCBI genes using blast #
+# 4. Alignment against the NCBI genes using blast #
 ## 04_blast ##
 Run mkblast with 06_library/fragments_5aFragBar_paired_again.fastq.gz ; Apply to p006 and p007
 ```bash
