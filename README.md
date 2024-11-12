@@ -44,7 +44,7 @@ put in the ./bin
 ```bash
 unzip Pairfq-0.17.0.zip -d /home/hooimin/bin
 # Install Pairfq to local::lib
-cd /home/hooimin/bin/Pairfq-0.17.0
+cd ~/bin/Pairfq-0.17.0
 perl Makefile.PL PREFIX=~/perl5 LIB=~/perl5/lib/perl5
 perl Makefile.PL INSTALL_BASE=~/perl5
 make
@@ -67,9 +67,9 @@ conda install bioconda::hmmer
 ```bash
 wget https://github.com/krejciadam/hammock/releases/download/v1.2.0/Hammock_v_1.2.0.7z
 # Extract the archive:
-7z x /home/hooimin/Hammock_v_1.2.0.7z -o/home/hooimin/Hammock_v_1.2.0
+7z x ~/Hammock_v_1.2.0.7z -o~/Hammock_v_1.2.0
 # List the contents of the extracted directory
-ls -R /home/hooimin/Hammock_v_1.2.0
+ls -R ~/Hammock_v_1.2.0
 ```
 #### Weblogo 0.0.0 ####
 ```bash
