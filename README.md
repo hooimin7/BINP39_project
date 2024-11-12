@@ -190,7 +190,7 @@ zcat p005a_S1_L001_R2_001_fragExt.fastq.gz p005b_S2_L001_R2_001_fragExt.fastq.gz
 
 # 3. Pairfq pair matching #
 ## 03_pairfq ## 
-(Extracted fragment paired with extracted barcode), use pairfragBar_p006.sh for p006,; use pairfragBar_p007.sh for p007 
+Extracted fragment paired with extracted barcode), use pairfragBar_p006.sh for p006; use pairfragBar_p007.sh for p007 
 The gunzip steps can be done only once, one gzip step is removed in the fragmentExtraction_p005.sh 
 ***gunzip steps before pairfq***
 The output files were zipped twice from bbduk2.sh 
