@@ -132,21 +132,22 @@ fi
 export PATH=$PATH:~/seqtk
 ```
 # 1. Raw data processing #
-## RAAV-60: p005, apply for p006, p007, some with similar scripts, some with special scripts for each group ##
+## RAAV-60: p005, apply for p006, p007 ##
+Some with similar scripts, some with special scripts for each group 
 Fastq files downloaded from Google Cloud were saved in RAAV-60: p005, p006 and p007
 ## fastqc before trim ##
 Check the fastq files quality, p005 and p007 have duplication of files (two pairs pf forward, two pairs of reverse files), p006 has only one pair of forward and reverse files
 ```bash
-sbatch /home/hooimin/lu2024-17-19/RAAV-60/scripts/fastqc.sh
+sbatch ~/RAAV-60/scripts/fastqc.sh
 ```
 ## 01_qualiyTrim ##
 ```bash
 bbduk.sh -Xmx1g in=p005a_S1_L001_R1_001.fastq.gz out=p005a_S1_L001_R1_001_subclean.fastq.gz qtrim=rl trimq=15 # for testing one #
-sbatch /home/hooimin/lu2024-17-19/RAAV-60/scripts/qualityTrim.sh
+sbatch ~/RAAV-60/scripts/qualityTrim.sh
 ```
 ## 01_qualityTrim/02_fastqcAfterTrim ## 
 ```bash
-sbatch /home/hooimin/lu2024-17-19/RAAV-60/scripts/fastqcAfterTrim.sh
+sbatch ~/RAAV-60/scripts/fastqcAfterTrim.sh
 ```
 ## MultiQc ##
 ```bash
@@ -157,7 +158,7 @@ multiqc ../../01_fastqc/ .
 # stands at 01_fastqc/multiqc_01_aftertrim #
 multiqc ../../02_fastqcAfterTrim/ .
 ```
-# 2. Extraction of Barcodes, gene fragments and linkers #
+# 2. Extraction of Barcodes, gene fragments and library IDs #
 ## RAAV-60: p005, 02_fragBarExt ##
 #### scripts ####
 ```bash
