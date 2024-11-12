@@ -265,14 +265,14 @@ in_name_R1P="barcodes_5aBarLib_paired_reads.fastq.gz"
 in_name_R2P="../03_pairfq/fragments_5a_paired_reads.fastq.gz"
 ```
 Make a table of fragment, barcodes and library id
-LUT frag-bar-lib, apply for p005, p006, p007
+LUT frag-bar-lib, apply to p005, p006, p007
 ```bash
 mkdir 01_LUT
 sbatch ~/RAAV-60/scripts/LUT_final.sh
 ```
 # 7. Starcode based barcode reduction #
 ## 07_starcode ## 
-Apply for p005, p006, p007
+Apply to p005, p006, p007
 ```bash
 sbatch ~/RAAV-60/scripts/starcode.sh
 ```
