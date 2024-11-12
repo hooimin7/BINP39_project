@@ -123,13 +123,13 @@ exec -l $SHELL
 ```
 #### Add PATH for the Google Cloud SDK ####
 ```bash
-if [ -f '/home/hooimin/google-cloud-sdk/path.bash.inc' ]; then
-    . '/home/hooimin/google-cloud-sdk/path.bash.inc'
+if [ -f '~/google-cloud-sdk/path.bash.inc' ]; then
+    . '~/google-cloud-sdk/path.bash.inc'
 fi
 ```
 #### Add seqtk to PATH ####
 ```bash
-export PATH=$PATH:/home/hooimin/seqtk
+export PATH=$PATH:~/seqtk
 ```
 # 1. Raw data processing #
 ## RAAV-60: p005, apply for p006, p007, some with similar scripts, some with special scripts for each group ##
