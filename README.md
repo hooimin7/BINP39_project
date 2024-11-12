@@ -39,7 +39,7 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 cpan Tie::Hash::DBD
 ```
 #### pairfq 0.17.0 ####
-https://github.com/sestaton/Pairfq/releases # downloaded version
+[pairfq](https://github.com/sestaton/Pairfq/releases # downloaded version)
 put in the ./bin
 ```bash
 unzip Pairfq-0.17.0.zip -d /home/hooimin/bin
