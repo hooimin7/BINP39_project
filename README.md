@@ -258,7 +258,7 @@ in_name_R1L="library_005a.fastq.gz" # (after combination: use combined_p005_LibE
 ```
 Note: for library p006: use library_006.fastq.gz as input file
 
-Pairfq library-barcode with fragment p005a ### (Paired barcode-library paired with the paired fragment)
+Pairfq library-barcode with fragment p005a,(Paired barcode-library paired with the paired fragment)
 ```bash
 sbatch ~/RAAV-60/scripts/pairfragBar2_p005.sh
 in_name_R1P="barcodes_5aBarLib_paired_reads.fastq.gz"
