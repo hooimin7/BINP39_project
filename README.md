@@ -64,8 +64,8 @@ conda install bioconda::seqkit
 conda install bioconda::hmmer
 ```
 #### Hammock v_1.2.0 ####
-[Hammock](https://github.com/krejciadam/hammock/releases/download/v1.2.0/Hammock_v_1.2.0.7z)
 ```bash
+wget https://github.com/krejciadam/hammock/releases/download/v1.2.0/Hammock_v_1.2.0.7z
 # Extract the archive:
 7z x /home/hooimin/Hammock_v_1.2.0.7z -o/home/hooimin/Hammock_v_1.2.0
 # List the contents of the extracted directory
